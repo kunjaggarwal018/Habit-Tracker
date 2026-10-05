@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101510;
+    color: #eeeeea;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #c7f45a;
+}
+
+.intro {
+    text-align: center;
+    color: #9aa39b;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.add {
+    background-color: #191f1a;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #303831;
+    margin-bottom: 30px;
+}
+
+.add input {
+    width: 38%;
+    padding: 11px;
+    margin-right: 8px;
+    background-color: #111611;
+    color: white;
+    border: 1px solid #3a443c;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.add input::placeholder {
+    color: #7f8981;
+}
+
+.add input:focus {
+    outline: none;
+    border-color: #9fc63f;
+}
+
+.add button {
+    padding: 11px 17px;
+    background-color: #c7f45a;
+    color: #172016;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add button:hover {
+    background-color: #b5e34b;
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #f0f2ed;
+}
+
+.habit {
+    background-color: #191f1a;
+    border: 1px solid #303831;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.habit:hover {
+    border-color: #50604f;
+}
+
+.habit-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: #f1f3ef;
+}
+
+.goal {
+    color: #949e96;
+    font-size: 14px;
+}
+
+.delete {
+    background-color: #302020;
+    color: #e48b8b;
+    border: 1px solid #513333;
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #442525;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.day {
+    text-align: center;
+}
+
+.day p {
+    color: #89938b;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.day input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #c7f45a;
+}
+
+.empty {
+    text-align: center;
+    background-color: #191f1a;
+    border: 1px dashed #3a443c;
+    padding: 35px;
+    border-radius: 14px;
+    color: #8d978f;
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .add input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .add button {
+        width: 100%;
+    }
+
+    .habit-top {
+        align-items: flex-start;
+    }
+
+    .days {
+        gap: 4px;
+    }
+}
